@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>A History of Pi</title>
+        <link rel="stylesheet" href="output.css" />
+        <link rel="icon" type="image/x-icon" href="assets/pi.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            document.documentElement.classList.add("js")
+        </script>
+    </head>
+
+    <body class="z-10 h-full w-full overflow-x-hidden">
+        <div class="fixed -z-10 h-screen w-screen text-wrap blur-[3px]">
+            <p class="pi text-wrap px-2 text-2xl text-neutral-400">
+                3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631558817488152092096282925409171536436789259036001133053054882046652138414695194151160943305727036575959195309218611738193261179310511854807446237996274956735188575272489122793818301194912983367336244065664308602139494639522473719070217986094370277053921717629317675238467481846766940513200056812714526356082778577134275778960917363717872146844090122495343014654958537105079227968925892354201995611212902196086403441815981362977477130996051870721134999999837297804995105973173281609631859502445945534690830264252230825334468503526193118817101000313783875288658753320838142061717766914730359825349042875546873115956286388235378759375195778185778053217122680661300192787661119590921642019893809525720106548586327886593615338182796823030195203530185296899577362259941389124972177528347913151557485724245415069595082953311686172785588907509838175463746493931925506040092770167113900984882401285836160356370766010471018194295559619894676783744944825537977472684710404753464620804668425906949129331367702898915210475216205696602405803815019351125338243003558764024749647326391419927260426992279678235478163600934172164121992458631503028618297455570674983850549458858692699569092721079750930295532116534498720275596023648066549911988183479775356636980742654252786255181841757467289097777279380008164706001614524919217321721477235014144197356854816136115735255213347574184946843852332390739414333454776241686251898356948556209921922218427255025425688767179049460165346680498862723279178608578438382796797668145410095388378636095068006422512520511739298489608412848862694560424196528502221066118630674427862203919494504712371378696095636437191728746776465757396241389086583264599581339047802759009946576407895126946839835259570982582262052248940772671947826848260147699090264013639443745530506820349625245174939965143142980919065925093722169646151570985838741059788595977297549893016175392846813826868386894277415599185592524595395943104997252468084598727364469584865383673622262609912460805124388439045124413654976278079771569143599770012961608944169486855584840635342207222582848864815845602850601684273945226746767889525213852254995466672782398645659611635488623057745649803559363456817432411251507606947945109659609402522887971089314566913686722874894056010150330861792868092087476091782493858900971490967598526136554978189312978482168299894872265880485756401427047755513237964145152374623436454285844479526586782105114135473573952311342716610213596953623144295248493718711014576540359027993440374200731057853906219838744780847848968332144571386875194350643021845319104848100537061468067491927819119793995206141966342875444064374512371819217999839101591956181467514269123974894090718649423196156794520809514655022523160388193014209376213785595663893778708303906979207734672218256259966150142150306803844773454920260541466592520149744285073251866600213243408819071048633173464965145390579626856100550810665879699816357473638405257145910289706414011097120628043903975951567715770042033786993600723055876317635942187312514712053292819182618612586732157919841484882916447060957527069572209175671167229109816909152801735067127485832228718352093539657251210835791513698820914442100675103346711031412671113699086585163983150197016515116851714376576183515565088490998985998238734552833163550764791853589322618548963213293308985706420467525907091548141654985946163718027098199430992448895757128289059232332609729971208443357326548938239119325974636673058360414281388303203824903758985243744170291327656180937734440307074692112019130203303801976211011004492932151608424448596376698389522868478312355265821314495768572624334418930396864262434107732269780280731891544110104468232527162010526522721116603966655730925471105578537634668206531098965269186205647693125705863566201855810072936065987648611791045334885034611365768675324944166803962657978771855608455296541266540853061434443185867697514566140680070023787765913440171274947042056223053899456131407112700040785473326993908145466464588079727082668306343285878569830523580893306575740679545716377525420211495576158140025012622859413021647155097925923099079654737612551765675135751782966645477917450112996148903046399471329621073404375189573596145890193897131117904297828564750320319869151402870808599048010941214722131794764777262241425485454033215718530614228813758504306332175182979866223717215916077166925474873898665494945011465406284336639379003976926567214638530673609657120918076383271664162748888007869256029022847210403172118608204190004229661711963779213375751149595015660496318629472654736425230817703675159067350235072835405670403867435136222247715891504953098444893330963408780769325993978054193414473774418426312986080998886874132604721569516239658645730216315981931951673538129741677294786724229246543668009806769282382806899640048243540370141631496589794092432378969070697794223625082216889573837986230015937764716512289357860158816175578297352334460428151262720373431465319777741603199066554187639792933441952154134189948544473456738316249934191318148092777710386387734317720754565453220777092120190516609628049092636019759882816133231666365286193266863360627356763035447762803504507772355471058595487027908143562401451718062464362679456127531813407833033625423278394497538243720583531147711992606381334677687969597030983391307710987040859133746414428227726346594704745878477872019277152807317679077071572134447306057007334924369311383504931631284042512192565179806941135280131470130478164378851852909285452011658393419656213491434159562586586557055269049652098580338507224264829397285847831630577775606888764462482468579260395352773480304802900587607582510474709164396136267604492562742042083208566119062545433721315359584506877246029016187667952406163425225771954291629919306455377991403734043287526288896399587947572917464263574552540790914513571113694109119393251910760208252026187985318877058429725916778131496990090192116971737278476847268608490033770242429165130050051683233643503895170298939223345172201381280696501178440874519601212285993716231301711444846409038906449544400619869075485160263275052983491874078668088183385102283345085048608250393021332197155184306354550076682829493041377655279397517546139539846833936383047461199665385815384205685338621867252334028308711232827892125077126294632295639898989358211674562701021835646220134967151881909730381198004973407239610368540664319395097901906996395524530054505806855019567302292191393391856803449039820595510022635353619204199474553859381023439554495977837790237421617271117236434354394782218185286240851400666044332588856986705431547069657474585503323233421073015459405165537906866273337995851156257843229882737231989875714159578111963583300594087306812160287649628674460477464915995054973742562690104903778198683593814657412680492564879855614537234786733039046883834363465537949864192705638729317487233208376011230299113679386270894387993620162951541337142489283072201269014754668476535761647737946752004907571555278196536213239264061601363581559074220202031872776052772190055614842555187925303435139844253223415762336106425063904975008656271095359194658975141310348227693062474353632569160781547818115284366795706110861533150445212747392454494542368288606134084148637767009612071512491404302725386076482363414334623518975766452164137679690314950191085759844239198629164219399490723623464684411739403265918404437805133389452574239950829659122850855582157250310712570126683024029295252201187267675622041542051618416348475651699981161410100299607838690929160302884002691041407928862150784245167090870006992821206604183718065355672525325675328612910424877618258297651579598470356222629348600341587229805349896502262917487882027342092222453398562647669149055628425039127577102840279980663658254889264880254566101729670266407655904290994568150652653053718294127033693137851786090407086671149655834343476933857817113864558
+            </p>
+        </div>                
+        <div
+            class="z-10 flex h-screen w-full flex-col items-center justify-center"
+            id="pi">
+            <img src="assets/pi.png" class="h-64 w-64 taos:translate-y-[-200px] taos:opacity-0 delay-[300ms] duration-[600ms]"  />
+            <h1 class="pridi-semibold text-9xl text-black">PI.</h1>
+            <!-- https://feathericons.dev/?search=arrow-down-circle&iconset=feather -->
+            <!-- <div class="grow"> -->
+            <!--     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-16 h-16 main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> -->
+            <!--         <circle cx="12" cy="12" r="10" /> -->
+            <!--         <polyline points="8 12 12 16 16 12" /> -->
+            <!--         <line x1="12" x2="12" y1="8" y2="16" /> -->
+            <!--     </svg> -->
+            <!-- </div> -->
+            
+        </div>
+
+        <div class="pt-64">
+            <p class="dm-sans-font text-center text-4xl duration-[400ms] taos:[transform:perspective(2500px)_rotateY(-100deg)] taos:invisible [animation-iteration-count:infinite] taos:[backface-visibility:hidden]" data-taos-offset="200">
+                Pi is a mathematical constant in use all over math, engineering, and science
+            </p>
+            <p class="dm-sans-italic pt-80 text-center text-5xl italic duration-[400ms] taos:[transform:perspective(2500px)_rotateX(-100deg)] taos:invisible [animation-iteration-count:infinite] taos:[backface-visibility:hidden]" data-taos-offset="600">...but it's so much more.</p>
+            <!-- <p class="dm-sans-font pt-80 text-center text-4xl">This is the story of Pi</p> -->
+        </div>
+        <div class="dm-sans-font taos:translate-y-[+600px] duration-[600ms] [animation-iteration-count:infinite] flex h-screen w-screen flex-col items-center justify-center text-center text-4xl" data-taos-offset="300">
+            <p>Pi has a long, interesting history.</p>
+            <p>Let's jump in.</p>
+        </div>
+        <div class="px-8 text-center dm-sans-font">
+            <h1 class="py-10 text-3xl taos:translate-y-[-600px] taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="200">Chapter 1: The Egyptians and Babylonians</h1>
+            <div class="flex flex-row">
+            <img class="w-1/6 pr-2 taos:translate-x-[-100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100" src="https://maa.org/sites/default/files/images/upload_library/46/Swetz_2012_Math_Treasures/Yale_Beinecke/Carlisle-Camera-img003.png">
+            <p class="w-5/6 text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                The Babylonians used a rough approximation of Pi when they made a formula (\(A=3r^2\)) for calculating
+                the area of a circle. They gave Pi a value of 3. A Babylonian stone tablet dating back to around 1900 BCE found a
+                slightly more accurate approximation of 3.125 by relating the length of the circumference to the perimiter of an
+                inscribed hexagon. The Egyptians took a different approach. Their formula for finding a circle used
+                3.1604, a different approximation for Pi. But soon, these approximations would soon be put to shame by a
+                Greek mathematician.
+            </p>
+            </div>
+            <h1 class="pt-[30rem] pb-10 text-3xl taos:translate-y-[-600px] taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="500">Chapter 2: Polygon Approximation</h1>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                Archimedes, a Greek mathematician, found an algorithm for calculating the value of Pi in around 250 BCE. 
+                He did this by using the method of exhaustion, which is an approach used to calculate the area or volume
+                of a shape that is difficult to calculate directly. Archimedes would find the perimeters of polygons
+                inscribed (inside of) and circumscribed (containing) a circle, and this would give the upper and lower
+                boundaries of pi. Archimedes did this until he reached a 96-sided polygon, giving \(3.1408\lt\pi\lt3.1429\).
+            </p>
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Archimedes_pi.svg" class="w-1/6 taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                In around 150 CE, a Greek-Roman scientist named Ptolemy gave \(\pi\) a value of \(3.1416\). Using the method
+                of exhaustion, eventually mathematicians reached a record of 39 digits of \(\pi\). In ancient China, \(\pi\)
+                ranged from \(3.1547\), to \(\sqrt 10\), and \(142 \over 45\). 
+            </p>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                In around 265 CE, Liu Hui created a different
+                polygon approximation algorithm to calculate Pi, and used a 3,072-sided polygon to calculate a value of 
+                \(3.1416\). He later found a more efficient algorithm for calculating \(\pi\), and used a 96-sided polygon
+                to find a value of \(3.14\). Another Chinese mathematician, Zu Chongzhi, calculated that \(3.1415926\lt\pi\lt3.1415927\).
+                Using Liu Hui's algorithm, and a 12,288-sided polygon, he found 2 approximations of \(\pi\): \(355\over113\) and
+                \(22\over7\). The former would be the most accurate approximation of \(\pi\) for centuries.
+            </p>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                More people would continue to use similar methods, with increasing side counts, until Austrian astronomer Christoph
+                Grienberger found 38 digits of \(\pi\) in 1630, using a whopping \(10^{40}\)-sided polygon.
+            </p>
+            <br>
+            <h1 class="pt-[30rem] pb-10 text-3xl taos:translate-y-[-600px] taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="500">Chapter 3: Infinite Series</h1>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                In the 16th and 17th centuries, \(\pi\) calculation was forever changed by the use of infinite series techniques.
+                Infinite series are when you find the sum of the terms in an infinite sequence. This allowed people to compute
+                \(\pi\) to much more precision than any of the polygon approximation algorithms. The idea of using an infinite series
+                to compute \(\pi\) started in the 14th or 15th century, and a written description for this technique was outlined
+                in 1500 CE. It was originally proofless, but then they were added in a later work in around 1530 CE. Viète's formula
+                was published by François Viète in 1593, and it uses an infinite product, rather than an infinite sum, which
+                is commonly used in \(\pi\) calculations. In 1655, John Wallis published an infinite product for \(\pi\):
+                \(\pi/2=(2/1\times2/3)\times(4/3\times4/5)\times(6/5\times6/7)...\).
+            </p>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                And then came along Isaac Newton who invented calculus. This led to many more infinite series that
+                approximated \(\pi\). Isaac Newton himself used a arcsine series to find a 15-digit approximation of \(\pi\).\
+                In 1671, James Gregory and later, Gottfried, in 1673, both independantly discovered the Taylor series expansion, a 
+                way to represent a function as an infinite sum, for arctangent: arctan \(z=z-{z^3\over3}+{z^5\over5}+{z^7\over7}...\).
+                This series equals \(\pi\over4\) when \(z=1\). Unfortunately, the convergence rate is extremely slow, and needed to be speeded up.
+                In 1699, Abraham Sharp, an English mathematician, used \(z=1\over\sqrt3\) to find \(\pi\) to 71 digits.
+            </p>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                For the first time, 100 digits of \(\pi\) were calculated in 1706 by John Machin using a much faster algorithm:
+                \({\pi\over4}=4\)arctan\({1\over{5}}-\)arctan\(1\over239\)
+                Later, more people would use variants of this algorithm (called Machin-like formulae), which were used
+                to calculate more digits of \(\pi\). Isaac Newton would later improve upon previous algorithms, but his results
+                were never published: arctan \(x={x\over{1+x^2}}+{2\over{3}}\times{x^3\over{(1+x^2)^2}}+{{{2\times4}\over{3\times5}}\times{{x^5}\over{(1+x^2)^3}}}+...\).
+                In his 1755 differential calculus textbook, Euler would later popularize this series, and improve upon it,
+                being able to calculate 20 digits of \(\pi\) in 20 minutes.
+            </p>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                A new record of 200 digits of \(\pi\) was calculated in 1853 by Zacharias Dase. This record would later
+                be beaten by William Shanks, a British scientist. He calculated 607 digits, but unfortunately, he made
+                a mistake in the 528th digit, which messed up all following digits. He attempted to add 100 digits
+                20 years later, but due to his grave error, those were false as well.
+            </p>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                Some infinite series were prioritized because they were more efficient and took less time to converge 
+                to \(\pi\). The less the time it takes for an infinite series to converge, the less computations
+                it takes to find \(\pi\).
+            </p>
+            <h1 class="pt-[30rem] pb-10 text-3xl taos:translate-y-[-600px] taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="500">Chapter 4: \(\pi\)'s Adoption</h1>
+            <div class="flex flex-row">
+                <p class="text-left text-xl taos:translate-x-[-100vw] duration-[400ms] [animation-iteration-count:infinite] w-5/6" data-taos-offset="100">
+                    Originally, \(\pi\) was used as a symbol for one half the circle's circumference. \(\pi\) was first used
+                    in the way we use it now by William Jones in 1706. Although, its usage in that way did not truly take off 
+                    until Euler started using it in his essays. Depending on the essay, the value of \(\pi\) could be 
+                    \(3.14...\) or \(6.28\), depending on which value suited the calculations best.
+                </p>
+                <p class="w-1/6 text-3xl self-center taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">\(e^{i\pi}+1=0\)</p>
+            </div>
+            <h1 class="pt-[30rem] pb-10 text-3xl taos:translate-y-[-600px] taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="500">Chapter 5: Modern Era</h1>
+            <div class="flex flex-row">
+            <p class="w-5/6 pr-2 text-right text-xl taos:translate-x-[-100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                The widespread adoption of computers in the 20th century led to breakthroughs in the values of \(\pi\) that
+                could be computed. In 1949, John Wrench and Levi Smith found 1,120 digits, by using only a desk calculator. 
+                George Reitwiesner and John von Neumann used an arctan infinite series to find 2,037 digits within 
+                the same year by using the ENIAC computer. The record kept being broken repeatedly, but they all still
+                used the same method (infinite arctan series). Milestones include: 10,000 digits in 1958, 100,000 digits
+                in 1961, and 1 million digits in 1973.
+            </p>
+            <img class="w-1/6 taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/ENIAC_Penn1.jpg/1200px-ENIAC_Penn1.jpg">
+            </div>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                In 1980, many advances were made in computers that made calculating \(\pi\) even faster. New iterative algorithms
+                were discorvered that were much faster at calculating \(\pi\) than infinite series. Essentially, iterative
+                algorithms are where subsequent calculations are based on the previous calculation. Furthermore, new,
+                much faster multiplication algorithms were developed that allowed for quicker calculations.
+            </p>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                Iterative algorithms were a big deal because, unlike infinite series, which add a digit for each new term,
+                iterative algorithms multiply the amount of digits at each step. These algorithms were published in 1975-1976
+                by Eugene Salamin and Richard Brent. Funnily enough, this was actually discovered >160 years prior by 
+                Carl Friedrich Gauss. The Gauss-Legendre algorithm converges extremely fast, giving 45 million correct \(\pi\)
+                digits in only 25 iterations. John and Peter Borwein made another algorithm which was even faster; the 
+                algorithm quadrupled the number of digits in each iteration, and a later one quintupled
+                the number of digits in each iteration. A Japanese mathematician, Yasumasa Kanada, set multiple records
+                for \(\pi\) digits calculated between 1995 and 2002.
+            </p>
+            <br>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                Other, more fun, ways of calculating \(\pi\) are the Monte Carlo methods, which take the results of 
+                random results and create approximations of \(\pi\). Last year for Pi Day, my friend happened to make a program
+                based off of that. (If you want to re-run it, focus on it by clicking on it and then press ctrl-r)
+            </p>
+            <div class="justify-center">
+            <iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=happypiday" allowfullscreen width="621" height="513" style="border:none; overflow:hidden; justify:center" class="justify-center"></iframe>
+            </div>    
+            <h1 class="pt-[30rem] pb-10 text-3xl taos:translate-y-[-600px] taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="500">Chapter 6: \(\pi\) Today</h1>
+            <p class="text-left text-xl taos:translate-x-[+100vw] duration-[400ms] [animation-iteration-count:infinite]" data-taos-offset="100">
+                Today, \(\pi\) is still used all over the world in many scientific and mathematical formulae, such as 
+                the formula for the area of a circle. People are still calculating way more digits of \(\pi\) than we 
+                could ever need, just to try to break the record. A symbol with many origins, \(\pi\) is arguably
+                one of the most important constants in mathematics, and it has revolutionized math and science.
+            </p>
+        </div>
+        <div class="dm-sans-font flex flex-col text-center text-xl">
+            <h1 class="text-3xl pt-52">Sources:</h1>
+            <a href="https://www.exploratorium.edu/pi/history-of-pi" target="__blank">A Brief History of Pi (Exploratorium)</a>
+            <a href="https://mathjax.org" target="__blank">MathJax (JavaScript display engine for math equations)</a>
+            <a href="https://www.bbvaopenmind.com/en/science/mathematics/history-of-number-pi/" target="__blank">
+                Number Pi π: The History and Main Names (BBVA OpenMind)
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Pi" target="__blank">Pi (Wikipedia)</a>
+        </div>
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+    </body>
+</html>
